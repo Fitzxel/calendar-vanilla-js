@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="center">
+            <h1>Calendar</h1>
+            <span>made by Fitzxel</span>
+        </div>
+    </header>
+    <main>
+        <div class="calendar">
+            <div class="heading">
+                <button id="prevMonth">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                        <!-- <title>Chevron Back</title> -->
+                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M328 112L184 256l144 144"/>
+                    </svg>
+                </button>
+                <h2 id="calendarTitle"></h2>
+                <button id="laterMonth">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                        <!-- <title>Chevron Forward</title> -->
+                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M184 112l144 144-144 144"/>
+                    </svg>
+                </button>
+                <button id="today">
+                    Today
+                </button>
+            </div>
+            <div class="month">
+                <div class="heading">
+                    <div class="item">Mon.</div>
+                    <div class="item">Tues.</div>
+                    <div class="item">Wed.</div>
+                    <div class="item">Thurs.</div>
+                    <div class="item">Fri.</div>
+                    <div class="item">Sun.</div>
+                    <div class="item">Sat.</div>
+                </div>
+                <div class="dates"></div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

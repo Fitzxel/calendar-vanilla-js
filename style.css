@@ -1,0 +1,101 @@
+:root {
+    --gridSize: 60px;
+    --color: #fff;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #222;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--color);
+}
+svg {
+    width: 24px;
+    fill: currentColor;
+}
+button {
+    border: 0;
+    width: 50px;
+    height: 50px;
+    background: #444;
+    border-radius: 4px;
+    color: var(--color);
+    font-size: 12px;
+    font-weight: 600;
+}
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background: #203E5F;
+}
+header .center {
+    text-align: center;
+}
+header h1 {
+    font-size: 32px;
+    font-weight: 700;
+}
+header span {
+    font-size: 16px;
+    font-weight: 400;
+}
+main {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+.calendar {
+    width: calc(var(--gridSize)*7);
+}
+.calendar > .heading {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 20px;
+}
+.calendar > .heading h2 {
+    font-size: 24px;
+    font-weight: 700;
+}
+.month {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.month .heading {
+    height: calc(var(--gridSize)/2);
+    display: grid;
+    grid-template-columns: repeat(7, var(--gridSize));
+}
+.month .dates {
+    display: grid;
+    grid-template-columns: repeat(7, var(--gridSize));
+    grid-template-rows: repeat(5, var(--gridSize));
+    grid-auto-rows: var(--gridSize);
+}
+.month .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 400;
+}
+.month .item.today {
+    background-color: #203E5F;
+}
+
+button:hover {
+    color: #ccc;
+}
+
+/* @media screen() {
+    
+} */
