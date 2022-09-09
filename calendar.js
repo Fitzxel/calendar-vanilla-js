@@ -1,7 +1,6 @@
 let months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 let currentDate = new Date();
 
-createMonth();
 function createMonth() {
     document.querySelector('.month .dates').innerHTML = '';
     let allMonthDates = 0;
@@ -34,6 +33,7 @@ function createMonth() {
     }
     document.querySelector('.month .dates').appendChild(documentFragment);   
 }
+createMonth();
 
 document.querySelector('#prevMonth').addEventListener('click', ()=> {
     currentDate = new Date(currentDate.getFullYear(), currentDate.getMonth()-1);
